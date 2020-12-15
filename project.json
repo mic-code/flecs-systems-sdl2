@@ -1,6 +1,11 @@
 {
     "id":"flecs.systems.sdl2",
     "type":"package",
+	"lang.c": {
+		"include": ["sdlinclude"],
+		"libpath": ["lib/x64"],
+		"lib": ["SDL2"]
+	},
     "value": {
         "author": "Sander Mertens",
         "description": "SDL2 based renderer for flecs",
@@ -8,7 +13,7 @@
             "flecs",
             "flecs.components.gui",
             "flecs.components.input",
-            "bake.sdl2"
-        ]
+			"bake.sdl2"
+        ]		
     }
 }
